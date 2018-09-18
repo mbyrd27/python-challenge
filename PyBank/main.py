@@ -29,7 +29,7 @@ for i in range(len(prof_loss)):
     if i > 0:
         change.append(prof_loss[i] - prof_loss[i-1])
 #store these calculations in variables
-av_change = (sum(change)/len(change)) #figure out a way to round this to two decimal places
+av_change = (sum(change)/len(change)) 
 greatest_increase = max(change)
 greatest_decrease = min(change) 
 date_max = (change.index(max(change))) + 1
